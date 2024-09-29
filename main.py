@@ -37,3 +37,7 @@ async def slug_only(slug: str):
         return HTTPException(404)
     else:
         return RedirectResponse(urls["public"][slug])
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app)
