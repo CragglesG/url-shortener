@@ -36,7 +36,10 @@ async def slug_only(slug: str):
     if slug == "favicon.ico":
         return HTTPException(404)
     else:
-        return RedirectResponse(urls["public"][slug])
+        if slug in urls["public"].keys():
+            return RedirectResponse(urls["public"][slug])
+        else:
+            return RedirectResponse("/")
 
 if __name__ == "__main__":
     import uvicorn

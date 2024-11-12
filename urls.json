@@ -5,6 +5,7 @@
   "public": {
     "hc": "https://hackclub.com",
     "portfolio": "https://craigg.dev",
+    "slack-summarizer ": "https://crates.io/crates/slack-summarizer",
     "url-shortener": "https://go.craigg.dev"
   }
 }
